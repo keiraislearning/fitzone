@@ -17,3 +17,17 @@ Jawab = BuildContext itu objek yang menyimpan informasi tentang posisi widget da
 
 6. Jelaskan konsep "hot reload" di Flutter dan bagaimana bedanya dengan "hot restart".
 Jawab = Hot Reload itu mengupdate UI tanpa menghapus state, sedangkan Hot Restart itu harus merestart aplikasi dari awal, state hilang. Intinya kalau mau styling doang hot reload sedangkan kalau ada error atau tampilannya nggak benar hot restart
+
+# Tugas 8 
+1. Jelaskan perbedaan antara Navigator.push() dan Navigator.pushReplacement() pada Flutter. Dalam kasus apa sebaiknya masing-masing digunakan pada aplikasi Football Shop kamu?
+Jawab = Navigator.push(), digunakan untuk membuka halaman baru sambil tetap menyimpan halaman sebelumnya di stack.
+Jadi pengguna masih bisa balik ke halaman sebelumnya dengan tombol back. Sedangkan Navigator.pushReplacement() mengganti halaman sekarang dengan halaman baru dan menghapus halaman lama dari stack. Jadi pengguna nggak bisa balik ke halaman sebelumnya.
+
+2. Bagaimana kamu memanfaatkan hierarchy widget seperti Scaffold, AppBar, dan Drawer untuk membangun struktur halaman yang konsisten di seluruh aplikasi?
+Jawab = Scaffold dipakai sebagai kerangka dasar halaman. Kemudian didalamnya ada AppBar untuk judul halaman, dan leftdrawer sebagai menu navigasi antar halaman.
+
+3. Dalam konteks desain antarmuka, apa kelebihan menggunakan layout widget seperti Padding, SingleChildScrollView, dan ListView saat menampilkan elemen-elemen form? Berikan contoh penggunaannya dari aplikasi kamu.
+Jawab = Padding digunakan agar setiap elemen tidak menempel satu sama lain sehingga tampilan menjadi lebih rapi dan mudah untuk dibaca. SingleChildScrollView membuat halaman form dapat di scroll ketika kontennya panjang, sehingga tidak terjadi overflow pada layar. Sedangkan ListView/Column digunakan untuk menyusun elemen form secara vertikal agar lebih rapi. Contoh penggunaannya ada di halaman Add Product dimana semua input disusun rapi dan halaman bisa discroll. 
+
+4. Bagaimana kamu menyesuaikan warna tema agar aplikasi Football Shop memiliki identitas visual yang konsisten dengan brand toko?
+Jawab = Warna tema disesuaikan menggunakan tema global pada main.dart dengan mengatur ColorScheme. Dengan cara ini, elemen seperti AppBar, tombol, dan highlight warna akan otomatis mengikuti warna utama yang ditentukan. hal ini membuat tampilan yang konsisten.
