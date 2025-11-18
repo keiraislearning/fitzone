@@ -14,6 +14,7 @@ class MyHomePage extends StatelessWidget {
     ItemHomepage("All Product", Icons.fitness_center, Colors.blue),
     ItemHomepage("My Product", Icons.fitness_center, Colors.green),
     ItemHomepage("Create Product", Icons.add, Colors.red),
+    ItemHomepage("Logout", Icons.logout, Colors.deepPurple),
   ];
 
     @override
@@ -70,13 +71,13 @@ class MyHomePage extends StatelessWidget {
                       ),
                     ),
 
-                    // Grid untuk menampilkan ItemCard dalam bentuk grid 3 kolom.
+                    // Grid untuk menampilkan ItemCard dalam bentuk grid 2 kolom.
                     GridView.count(
                       primary: true,
                       padding: const EdgeInsets.all(20),
                       crossAxisSpacing: 10,
                       mainAxisSpacing: 10,
-                      crossAxisCount: 3,
+                      crossAxisCount: 4,
                       // Agar grid menyesuaikan tinggi kontennya.
                       shrinkWrap: true,
 

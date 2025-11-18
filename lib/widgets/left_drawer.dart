@@ -1,3 +1,4 @@
+import 'package:fitzone/screens/product_entry_list.dart';
 import 'package:flutter/material.dart';
 import 'package:fitzone/screens/menu.dart';
 import 'package:fitzone/screens/productlist_form.dart';
@@ -60,6 +61,17 @@ class LeftDrawer extends StatelessWidget {
                 builder: (context) => ProductFormPage(),
               ),
               );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.add_reaction_rounded),
+            title: const Text('Product List'),
+            onTap: () {
+                // Route to news list page
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const ProductEntryListPage(filter: "all")),
+                );
             },
           ),
         ],
